@@ -1,0 +1,116 @@
+.containerNavBar {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 96px)) 1fr;
+    grid-template-rows: 90px;
+    background: rgba(34, 34, 34, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    column-gap: 24px;
+    & svg{
+        display: none;
+    }
+    & nav {
+        grid-column: 2/14;
+        user-select: none;
+        align-items: center;
+        justify-content: space-between;
+
+        & img {
+            height: 30px;
+        }
+
+        & ul {
+            width: 60%;
+            padding: 0;
+            justify-content: space-between;
+            align-items: center;
+
+            & li {
+                list-style: none;
+
+                & a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: white;
+                }
+
+                &::after {
+                    content: " ";
+                    display: block;
+                    height: 1px;
+                    background-color: white;
+                    animation: after-navbar 1.5s ease forwards;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (width>900px) and (width<1239px) {
+    .containerNavBar {
+        grid-template-columns: repeat(12, 1fr);
+        padding-left:24px ;
+        padding-right: 24px;
+
+        & nav {
+            grid-column: 1/-1;
+            ul {
+                width: 70%;
+            }
+        }
+    }
+
+}
+
+@media screen and (width>600px) and (width<=900px) {
+    .containerNavBar {
+        grid-template-columns: repeat(8, 1fr);
+        padding-left:24px ;
+        padding-right: 24px;
+
+        & nav {
+            grid-column: 1/-1;
+
+            & img {
+                height: 20px;
+            }
+
+            & ul {
+                width: 75%;
+                li a {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (width<600px) {
+    .containerNavBar {
+        grid-template-columns: repeat(4, 1fr);
+        padding-left:16px ;
+        padding-right: 16px;
+
+        & nav {
+            grid-column: 1/-1;
+
+            & img {
+                height: 20px;
+            }
+
+            & ul {
+                display: none;
+            }
+            & svg{
+                display: block;
+                fill: white;
+                height: 20px;
+            }
+        }
+    }
+
+}
