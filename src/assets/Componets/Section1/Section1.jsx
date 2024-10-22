@@ -5,7 +5,6 @@ import './Section1.css'
 function Section1() {
     return (
         <section className='grow-page-contenedor'>
-            <div className="fondo"></div>
             <div className="container">
                 <div className="texto">
                     <div className="titles">
