@@ -1,4 +1,5 @@
 import NavBar from './assets/Componets/NavBar/NavBar'
+import Section1 from './assets/Componets/Section1/Section1'
 
 function App() {
 
@@ -7,10 +8,8 @@ function App() {
       <header>
         <NavBar/>
       </header>
-      <section>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <p>Secction</p>
-      </section>
+      <Section1/>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </>
   )
 }
