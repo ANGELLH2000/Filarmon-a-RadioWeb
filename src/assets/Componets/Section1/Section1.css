@@ -201,3 +201,38 @@ section.grow-page-contenedor {
         }
     }
 }
+@media screen and (width<=450px) {
+    section.grow-page-contenedor {
+        & .container {
+            grid-template-columns: 1fr;
+            grid-row: auto auto;
+            & .texto {
+                grid-column: 1;
+                grid-row: 1;
+                width: 100%;
+                align-items: center;
+                gap: 20px;
+                & .titles {
+                    & h2 {
+                        font-size: 14px;
+                    }
+
+                    & img {
+                        height: 75px;
+                    }
+                }
+
+                & .subtitles {
+                    & div p {
+                        padding: 0;
+                        font-size: 12px;
+                    }
+                }
+            }
+            & img.img-principal {
+                grid-column: 1;
+                grid-row: 2;
+            }
+        }
+    }
+}
