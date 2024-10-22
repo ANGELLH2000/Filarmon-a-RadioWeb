@@ -1,8 +1,9 @@
 section.grow-page-contenedor {
     background-image: url(/svgfondo.svg);
-    
+
     & .container {
-        height: 710px;
+        height: auto;
+        padding-top: 100px;
         display: grid;
         grid-template-columns: auto 50%;
         column-gap: 30px;
@@ -81,13 +82,14 @@ section.grow-page-contenedor {
     section.grow-page-contenedor {
         & .container {
             grid-template-columns: 1fr 2fr;
-            height: auto;
             padding-top: 90px;
+
             & .texto {
                 & .titles {
                     & h2 {
                         font-size: 40px;
                     }
+
                     & img {
                         height: 150px;
                     }
@@ -96,17 +98,103 @@ section.grow-page-contenedor {
         }
     }
 }
-@media screen  and (width<1000px) {
+
+@media screen and (width<1000px) {
     section.grow-page-contenedor {
         & .container {
             grid-template-columns: 1fr 1fr;
+
             & .texto {
+                padding-top: 20px;
+
                 & .titles {
                     & h2 {
                         font-size: 30px;
                     }
+
                     & img {
                         height: 120px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (width<=750px) {
+    section.grow-page-contenedor {
+        & .container {
+            & .texto {
+                padding-top: 20px;
+
+                & .titles {
+                    & h2 {
+                        font-size: 25px;
+                    }
+
+                    & img {
+                        height: 100px;
+                    }
+                }
+
+                & .subtitles {
+                    & svg {
+                        height: 16px;
+                        width: 16px;
+                    }
+
+                    & div p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width<=690px) {
+    section.grow-page-contenedor {
+        & .container {
+            & .texto {
+                & .titles {
+                    & h2 {
+                        font-size: 20px;
+                    }
+
+                    & img {
+                        height: 90px;
+                    }
+                }
+
+                & .subtitles {
+                    & div p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width<=600px) {
+    section.grow-page-contenedor {
+        & .container {
+            & .texto {
+                & .titles {
+                    & h2 {
+                        font-size: 14px;
+                    }
+
+                    & img {
+                        height: 75px;
+                    }
+                }
+
+                & .subtitles {
+                    & div p {
+                        padding: 0;
+                        font-size: 8px;
                     }
                 }
             }
