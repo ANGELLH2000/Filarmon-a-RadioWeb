@@ -7,6 +7,10 @@ function App() {
       <header>
         <NavBar/>
       </header>
+      <section>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <p>Secction</p>
+      </section>
     </>
   )
 }
