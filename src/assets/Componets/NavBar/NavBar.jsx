@@ -24,7 +24,7 @@ function NavBar() {
                 <img src="/logo.svg" alt="Logo de Filarmonia" />
                 <ul className='flex-row'>
                     <li><a href="">INICIO</a></li>
-                    <li><a href="">RADIO EN VIVO</a></li>
+                    <li className='active'><a href="">RADIO EN VIVO</a></li>
                     <li><a href="">QUIENES SOMOS</a></li>
                     <li><a href="">AUSPICIADORES</a></li>
                     <li><a href="">CONTACTO</a></li>
