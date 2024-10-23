@@ -59,7 +59,7 @@ function Reproductor() {
                         </div>
                     </div>
                     <div className="info flex-col">
-                        <h5>Programa:</h5>
+                        <h5>Programa en Vivo:</h5>
                         <p>Lo Mejor del Jazz</p>
                     </div>
                 </div>
