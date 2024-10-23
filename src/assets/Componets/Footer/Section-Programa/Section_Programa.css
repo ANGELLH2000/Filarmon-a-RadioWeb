@@ -1,6 +1,6 @@
 .Section_Programa.grow-page-contenedor {
     .container {
-        background-color: rgb(241, 241, 241);
+        background-color: white;
         grid-column: 3/13;
         display: flex;
         flex-direction: row;
