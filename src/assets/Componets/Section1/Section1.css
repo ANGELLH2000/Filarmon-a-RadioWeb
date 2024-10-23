@@ -205,7 +205,6 @@ section.grow-page-contenedor {
     section.grow-page-contenedor {
         & .container {
             grid-template-columns: 1fr;
-            grid-row: auto auto;
             row-gap: 30px;
             & .texto {
                 grid-column: 1;
