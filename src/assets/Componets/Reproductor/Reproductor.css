@@ -1,4 +1,7 @@
 .Reproducto.grow-page-contenedor {
+    & audio{
+        display: none;
+    }
     .container {
         background-color: white;
         grid-column: 3/13;
@@ -39,15 +42,19 @@
             & button {
                 background-color: transparent;
                 border: none;
+                animation: btn 1s ease forwards;
 
                 &.none {
                     display: none;
+                }
+                &.play{
+                    animation: btn-play 2s forwards infinite;
                 }
 
                 & svg {
                     height: 40px;
                     width: 40px;
-                    fill: #e2b503;
+                    fill: #cea504;
 
                 }
             }
@@ -176,5 +183,28 @@
         }
 
         
+    }
+}
+@keyframes btn{
+    0% {
+        opacity:0%;
+        scale: 0.5;
+    }
+
+    100% {
+        scale: 1;
+        opacity: 100%;
+    }
+}
+@keyframes btn-play{
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
     }
 }

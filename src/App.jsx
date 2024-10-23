@@ -13,7 +13,7 @@ function App() {
       </header>
       <Section1/>
       <Reproductor/>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br />
       <Section_Programa/>
       <footer>
         <Footer/>
