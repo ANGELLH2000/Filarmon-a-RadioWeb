@@ -1,7 +1,8 @@
 import Footer from './assets/Componets/Footer/Footer'
-import Section_Programa from './assets/Componets/Footer/Section-Programa/Section_Programa'
+import Section_Programa from './assets/Componets/Section-Programa/Section_Programa'
 import NavBar from './assets/Componets/NavBar/NavBar'
 import Section1 from './assets/Componets/Section1/Section1'
+import Reproductor from './assets/Componets/Reproductor/Reproductor'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
         <NavBar/>
       </header>
       <Section1/>
+      <Reproductor/>
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <Section_Programa/>
       <footer>
