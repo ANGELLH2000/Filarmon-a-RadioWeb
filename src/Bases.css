@@ -36,6 +36,7 @@ p {
     & .container{
         grid-column: 2/14;
         grid-row: 1;
+        overflow: hidden;
     }
 }
 @media screen and (width>900px) and (width<1239px) {
