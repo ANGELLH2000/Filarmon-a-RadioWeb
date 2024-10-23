@@ -161,7 +161,7 @@
         .container {
             grid-column: 1/-1;
             gap: 20px;
-            padding: 20px;
+            padding: 40px 20px;
             flex-direction: column;
             & .textos{
                 width: 100%;
