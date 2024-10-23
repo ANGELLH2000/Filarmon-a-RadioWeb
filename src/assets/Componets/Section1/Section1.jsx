@@ -14,7 +14,7 @@ function Section1() {
                     <div className="subtitles flex-row">
                         <FaChevronRight />
                         <div>
-                            <p>Conducto: <span>Jesus Ruiz Durant</span></p>
+                            <p>Conductor: <span>Jesus Ruiz Durant</span></p>
                             <p>Jueves a Domingo a las 11 pm</p>
                         </div>
                     </div>

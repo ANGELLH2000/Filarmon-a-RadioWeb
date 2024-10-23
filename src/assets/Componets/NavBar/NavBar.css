@@ -41,7 +41,7 @@
                         height: 1px;
                         background-color: white;
                         transform: translateY(8px);
-                        animation: after-navbar 1.5s ease forwards;
+                        animation: after-navbar 1s ease forwards;
                     }
                 }
             }
